@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Page</title>
+    <style>
+        /* Estilos generales */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Sección principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 0 50px;
+    position: relative;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+h4 {
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: -10px 0;
+}
+
+p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: gray;
+    z-index: 2;
+}
+button a{
+    text-decoration: none;
+}
+
+/* Indicador de paginación */
+.pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination span {
+    color: gray;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: gray;
+    margin: 0 10px;
+}
+
+/* Imagen de estatua */
+.image-container {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 40%;
+    z-index: 2;
+}
+
+.image-container img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* Círculos decorativos */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0.3;
+}
+
+.circle1 {
+    width: 500px;
+    height: 500px;
+    top: 7%;
+    right: 80px;
+    z-index: 1;
+}
+
+.circle2 {
+    width: 120px;
+    height: 120px;
+    bottom: 10px;
+    left: 100px;
+    z-index: 1;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">C+A</div>
+    
+    </header>
+
+    <main>
+        <div class="text-content">
+            <h4>Tu y Yo</h4>
+            <h1>Juntos</h1>
+            <p>Quiero que nunca se te olvide algo, no va a ser posible que se me olvide algo que es importante 
+                para ti, y aunque no tenga algo fisico para darte, siempre encontrare la manera de dartelo
+                asi que lo hice de una de las maneras en las que soy bueno... PROGRAMANDO. <br>
+                Dale click al boton y descubre un sorpresa para ti.
+            </p>
+            <button><a href="flower.html">Sorpresa!!</a></button>
+            
+        </div>
+
+        <div class="image-container">
+            <img src="img/1.png" alt="Statue">
+        </div>
+
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+    </main>
+</body>
+</html>
